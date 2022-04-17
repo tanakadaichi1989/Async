@@ -46,6 +46,7 @@ struct ContentView: View {
                 Text("PUSH")
                     .fontWeight(.heavy)
             }
+            .accessibility(identifier: "button")
             .buttonStyle(.borderedProminent)
             .disabled(!canTap)
         }

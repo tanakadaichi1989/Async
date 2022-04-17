@@ -27,6 +27,8 @@ class AsyncUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
+        let button = app.buttons.matching(identifier: "button").firstMatch
+        button.tap()
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
